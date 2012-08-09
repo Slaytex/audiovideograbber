@@ -53,14 +53,23 @@
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.51);
 	margin-left: 2px;
 	overflow: hidden;
-	background: url(../img/gradient_loader.png) -223px; /* Gradient is at -223 and loader starts at -221 and ends at 0 */
+	background: url(../img/gradient_loader.png) -225px; /* Gradient is at -223 and loader starts at -221 and ends at 0 */
 	/*CSS Generated Gradient below*/
 /*	background: -webkit-linear-gradient(top, #ebecee 0%, #d4d6da 100%) #ebecee;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ebecee), to(#d4d6da)) #ebecee;*/
 	margin-top: 8px !important;
 	float: left;
 	position: relative;
+	
 }
+
+.foundcontainer-on {
+		background: url(../img/gradient_loader_on.png) -225px; /* Gradient is at -223 and loader starts at -221 and ends at 0 */
+	/*CSS Generated Gradient below*/
+/*	background: -webkit-linear-gradient(top, #ebecee 0%, #d4d6da 100%) #ebecee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ebecee), to(#d4d6da)) #ebecee;*/
+}
+
 
 
 
@@ -87,7 +96,7 @@
 
 .cancel
 {
-	display: block;
+	display: none;
 	width: 20px;
 	height: 18px;
 	background: url('../img/cancelsprite.png') no-repeat 0 bottom;
@@ -97,6 +106,7 @@
 	cursor: pointer;
 	left: 196px;
 	top: 3px;
+	
 }
 
 .cancel:hover
@@ -129,9 +139,9 @@
 	-moz-box-shadow: 0 2px 4px #605a5a;
 	-webkit-box-shadow: 0 2px 4px #605a5a;
 	box-shadow: 0 2px 4px #605a5a;
-	
-	
 }
+
+
 
 .mp3{
 	position: absolute;
@@ -200,7 +210,7 @@
 	height: 31px;
 }
 
-.downloadthis, .filename
+.downloadthis, .filename, .downloadingfile
 {
 	float: left;
 }

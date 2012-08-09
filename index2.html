@@ -7,6 +7,29 @@
         <link rel="stylesheet" href="css/style.css">
      <!--   <link rel="stylesheet" href="css/reset.css">-->
    
+   <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+	<script>
+		$(document).ready(function(){
+	
+			var filenameHover = function(){
+			
+				$(this).parent().parent().toggleClass('foundcontainer-on');
+			};
+			
+			$('p.filename').on('hover', filenameHover);
+			
+			
+			$('p.filename').click(function(){
+				
+				$(this).off('hover', filenameHover);
+				$(this).parent().parent().addClass('foundcontainer-on');
+				$(this).parent().animate({left:'-1'}, 1000);
+			});
+			
+		})
+		
+	</script>
 
 </head>
 <body style="margin:10px;">
@@ -29,17 +52,18 @@
 		<!--selection start-->
 			<div class="foundcontainer first"> 
 		
-			<div class="selectcontainer">
+			<!--<div class="selectcontainer">
 				<div class="btn mp3">MP3</div>
 				<div class="btn mp4">MP4</div>
 				<div class="btn original">Original</div>
-			</div>
+			</div>-->
 			
 			<div class="cancel"><a href="#">Cancel</a></div>
 				
 			<div class="downloadandfilenametomove">
 				<p class="downloadthis">Download this File</p>
 				<p class="filename">...19976/797.mp4</p>
+				<p class="downloadingfile">testing 123</p>
 			</div>
 
 		</div>
