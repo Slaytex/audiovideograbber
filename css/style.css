@@ -3,7 +3,7 @@
 {
 	background-image: url(../img/background.gif);
 	width: 251px;
-	height: 422px;
+	height: 300px;
 	position: relative;
 }
 
@@ -35,13 +35,13 @@
 #textareabottom
 {
 	z-index:3;
-	left: 10px;
+	left: 8px;
 	color: #4d4d4d;
 	width: 234px;
 	position: absolute;
 	top: 115px;
 	line-height: 35px;
-	height: 290px;
+	height: 166px;
 	overflow: auto;
 }
 
