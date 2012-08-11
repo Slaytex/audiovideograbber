@@ -1,0 +1,197 @@
+
+.backgroundimage
+{
+	background-image: url(../img_pop/background.png);
+	width: 300px;
+	height: 91px;
+	position: relative;
+}
+
+
+.saveas {
+	font: 15px 'AvalonBook';
+	top: 17px;
+	position: relative;
+	text-align: center;
+	color: #444444;
+}
+
+
+.foundcontainer
+{
+	
+	height: 35px;
+	width: 214px;	
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.51);
+	overflow: hidden;
+	background: url(../img_pop/gradient_loader.png) -221px; /* Gradient is at -223 and loader starts at -221 and ends at 0 */
+	/*CSS Generated Gradient below*/
+/*	background: -webkit-linear-gradient(top, #ebecee 0%, #d4d6da 100%) #ebecee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ebecee), to(#d4d6da)) #ebecee;*/
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+
+.foundcontainer-on {
+		background: url(../img_pop/gradient_loader_on.png) -225px; /* Gradient is at -223 and loader starts at -221 and ends at 0 */
+	/*CSS Generated Gradient below*/
+/*	background: -webkit-linear-gradient(top, #ebecee 0%, #d4d6da 100%) #ebecee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ebecee), to(#d4d6da)) #ebecee;*/
+}
+
+
+
+
+.foundcontainer p
+{
+	font: 13px/22px 'AvalonDemi';
+	text-align: center;
+	color: #525c69;
+	text-shadow: 0 2px 1px #ffffff;
+	margin-top: 6px;
+	width: 210px;
+	position: relative;
+}
+
+.first
+{
+	margin-top: 0 !important;
+}
+
+.last
+{
+	margin-bottom: 5px;
+}
+
+.cancel
+{
+	
+	width: 20px;
+	height: 18px;
+	background: url('../img_pop/cancelsprite.png') no-repeat 0 bottom;
+	text-indent: -99999px;
+	position: absolute;
+	z-index: 99;
+	cursor: pointer;
+	left: 196px;
+	top: 3px;
+	
+}
+
+.cancel:hover
+{
+	background-position: 0 0;
+}
+
+
+/*File Type Buttons Start*/
+
+.selectcontainer
+{
+	display: block;
+	width: 186px;
+	height: 31px;
+	position: absolute;
+	overflow: visible;
+	top: 41px;
+	left: 56px;
+}
+
+.btn
+{
+	position: absolute;
+	height: 22px;
+	font: 13px/21px AvalonDemi;
+	padding-right: 8px;
+	padding-left: 8px;
+	color: #ffffff;
+	-moz-box-shadow: 0 2px 4px #605a5a;
+	-webkit-box-shadow: 0 2px 4px #605a5a;
+	box-shadow: 0 2px 4px #605a5a;
+}
+
+
+
+.mp3{
+	position: absolute;
+	left: 20px;
+	top: 2px;
+	border-radius: 6px 0px 0px 6px;
+	background: -moz-linear-gradient(90deg, #da3818 0%, #f59380 100%) #dd7d6b;
+	background: -webkit-gradient(linear, left bottom, left top, from(#da3818), to(#f59380)) #dd7d6b;
+	z-index: 10;
+}
+
+.mp3:hover
+{
+	background: -moz-linear-gradient(90deg, #da3818 0%, #f9b4a7 100%) #c65a45;
+	background: -webkit-gradient(linear, left bottom, left top, from(#da3818), to(#f9b4a7)) #c65a45;
+	cursor: pointer;
+}
+
+.mp4{
+	position: absolute;
+	left: 61px;
+	top: 2px;
+	border-radius: 0px 0px 0px 0px;
+	background: -moz-linear-gradient(90deg, #3c7dbd 0%, #75a8dc 100%) #4b8ed3;
+	background: -webkit-gradient(linear, left bottom, left top, from(#3c7dbd), to(#75a8dc)) #4b8ed3;
+	z-index: 11;
+	
+}
+
+.mp4:hover
+{
+	background: -moz-linear-gradient(90deg, #3c7dbd 0%, #bbd4ed 100%) #60a2e6;
+	background: -webkit-gradient(linear, left bottom, left top, from(#3c7dbd), to(#bbd4ed)) #60a2e6;
+	cursor: pointer;
+}
+
+
+.original{
+	position: absolute;
+	left: 102px;
+	top: 2px;
+	border-radius: 0px 6px 6px 0px;
+	background: -moz-linear-gradient(90deg, #2c912c 0%, #65dd65 100%) #48cb48;
+	background: -webkit-gradient(linear, left bottom, left top, from(#2c912c), to(#65dd65)) #48cb48;
+	z-index: 12;
+	
+}
+
+.original:hover
+{
+	background: -moz-linear-gradient(90deg, #2c912c 0%, #bcf0bc 100%) #62e462;
+	background: -webkit-gradient(linear, left bottom, left top, from(#2c912c), to(#bcf0bc)) #62e462;
+	cursor: pointer;
+	
+}
+
+/*File Type Buttons End*/
+
+
+.downloadandfilenametomove
+{
+	position: relative;
+	display: inline-block;
+	left: -213px; /* variable should be -213px for initial filename and -1px for 'download' link  */
+	width: 426px;
+	height: 31px;
+}
+
+.downloadthis, .filename, .downloadingfile
+{
+	float: left;
+}
+
+.downloadthis, .filename:hover
+{
+	text-decoration: underline;
+	color: #1e66af;
+	cursor: pointer;
+}
+
+
+
